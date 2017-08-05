@@ -11,7 +11,6 @@ public class AlertTool {
         Alert alert = new Alert(AlertType.INFORMATION);
         alert.setTitle("消息提示框");
         alert.setHeaderText(text);
-        alert.setContentText("操作成功!");
         alert.showAndWait();
     }
 }

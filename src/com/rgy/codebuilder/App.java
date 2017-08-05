@@ -29,6 +29,10 @@ public class App extends Application {
         stage.show();
     }
 
+    public Stage getStage() {
+        return stage;
+    }
+
     public void showCreateCode() throws IOException {
         FXMLLoader loader = new FXMLLoader();
         loader.setLocation(App.class.getResource("view/CreateCode.fxml"));

@@ -1,8 +1,8 @@
 ----------------------------------------------------------------
-Fri Aug 04 22:58:38 CST 2017:
-Booting Derby version The Apache Software Foundation - Apache Derby - 10.13.1.1 - (1765088): instance a816c00e-015d-adc1-6469-00000653c948 
-on database directory D:\Workspaces\idea\codeBuilder1.2\db with class loader sun.misc.Launcher$AppClassLoader@42a57993 
-Loaded from file:/D:/Workspaces/idea/codeBuilder1.2/out/artifacts/codeBuilder/lib/derby-10.13.1.1.jar
+Sat Aug 05 10:59:20 CST 2017:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.13.1.1 - (1765088): instance a816c00e-015d-b055-3658-000005a39c08 
+on database directory D:\Workspaces\idea\codeBuilder1.2\db with class loader sun.misc.Launcher$AppClassLoader@18b4aac2 
+Loaded from file:/D:/Workspaces/efxlipse/codeBuilder/lib/derby-10.13.1.1.jar
 java.vendor=Oracle Corporation
 java.runtime.version=1.8.0_131-b11
 user.dir=D:\Workspaces\idea\codeBuilder1.2

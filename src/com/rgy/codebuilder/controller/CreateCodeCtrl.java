@@ -12,15 +12,17 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.geometry.NodeOrientation;
 import javafx.scene.Node;
-import javafx.scene.control.ChoiceBox;
-import javafx.scene.control.Label;
-import javafx.scene.control.SingleSelectionModel;
-import javafx.scene.control.TextField;
+import javafx.scene.control.*;
 import javafx.scene.input.InputMethodEvent;
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
+import javafx.stage.DirectoryChooser;
+import javafx.stage.DirectoryChooserBuilder;
+import javafx.stage.FileChooser;
+import javafx.stage.Stage;
 import jdk.nashorn.internal.objects.Global;
 
+import java.io.File;
 import java.io.IOException;
 import java.util.*;
 
@@ -54,11 +56,25 @@ public class CreateCodeCtrl {
 
     }
 
+    public void showFileDirSelect(){
+        Stage stage = app.getStage();
+        DirectoryChooser dirChiooser = new DirectoryChooser();
+        String cwd = System.getProperty("user.dir");
+        File file = new File(cwd);
+        dirChiooser.setInitialDirectory(file);
+        File chosenDir = dirChiooser.showDialog(stage);
+        if (chosenDir != null) {
+            String outPath = chosenDir.getAbsolutePath();
+            pathVal.setText(outPath);
+        } else {
+            AlertTool.show("未选择文件夹");
+        }
+
+
+    }
     public void selectTemp(ActionEvent evt) {
 
-
         clearVbox(vbox);
-
 
         SingleSelectionModel<Temp> selectionModel = tempList.getSelectionModel();
         Temp temp = selectionModel.getSelectedItem();
@@ -72,8 +88,8 @@ public class CreateCodeCtrl {
         label.setText("磁盘路径");
         label.setPrefWidth(150);
         pathVal = new TextField();
-        pathVal.setText("d:/");
         pathVal.setPrefWidth(300);
+        pathVal.setOnMouseClicked(e->showFileDirSelect());
         hbox.getChildren().addAll(label, pathVal);
         vbox.getChildren().add(hbox);
 
