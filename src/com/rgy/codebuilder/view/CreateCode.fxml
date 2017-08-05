@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.rgy.codebuilder.controller.CreateCodeCtrl">
+   <top>
+      <MenuBar BorderPane.alignment="CENTER">
+        <menus>
+          <Menu mnemonicParsing="false" text="功能">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#TempManeger" text="模板管理" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="帮助">
+            <items>
+              <MenuItem mnemonicParsing="false" text="关于" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+   </top>
+   <center>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button layoutX="314.0" layoutY="289.0" mnemonicParsing="false" onAction="#wirteToDisk" prefWidth="80.0" text="生成" AnchorPane.bottomAnchor="8.0" AnchorPane.rightAnchor="8.0" />
+            <ScrollPane layoutX="14.0" layoutY="53.0" AnchorPane.bottomAnchor="40.0" AnchorPane.leftAnchor="8.0" AnchorPane.rightAnchor="8.0" AnchorPane.topAnchor="50.0">
+              <content>
+                <AnchorPane>
+                     <children>
+                        <VBox fx:id="vbox" layoutX="39.0" layoutY="32.0" spacing="8.0" AnchorPane.leftAnchor="8.0" AnchorPane.rightAnchor="8.0" AnchorPane.topAnchor="8.0" />
+                     </children></AnchorPane>
+              </content>
+            </ScrollPane>
+            <Label layoutX="14.0" layoutY="12.0" text="模板" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="12.0">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <ChoiceBox fx:id="tempList" layoutX="55.0" layoutY="13.0" prefWidth="150.0" AnchorPane.leftAnchor="50.0" AnchorPane.topAnchor="8.0" />
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

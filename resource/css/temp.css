@@ -1,0 +1,20 @@
+.values{
+	-fx-min-height: 200px
+}
+.vbox{
+	-fx-spacing: 8px
+}
+.hbox{
+	-fx-spacing: 8px
+}
+.hidId{
+
+}
+.css0{
+	-fx-alignment: baseline-right  ;
+	-fx-min-width: 150px;
+}
+.css1{
+	-fx-alignment: baseline-left ;
+	-fx-min-width: 300px;
+}

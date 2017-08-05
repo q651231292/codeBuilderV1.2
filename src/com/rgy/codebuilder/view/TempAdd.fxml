@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.rgy.codebuilder.controller.TempAddCtrl">
+   <children>
+      <ScrollPane fx:id="tempData" layoutX="14.0" layoutY="93.0" prefHeight="139.0" prefWidth="301.0" AnchorPane.bottomAnchor="8.0" AnchorPane.leftAnchor="8.0" AnchorPane.rightAnchor="8.0" AnchorPane.topAnchor="95.0">
+         <content>
+            <VBox fx:id="vbox" spacing="8.0">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets></VBox>
+         </content></ScrollPane>
+      <Label layoutX="146.0" layoutY="67.0" text="创建模板" AnchorPane.leftAnchor="8.0" AnchorPane.topAnchor="8.0">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <HBox alignment="CENTER" layoutX="24.0" layoutY="68.0" spacing="8.0" AnchorPane.leftAnchor="8.0" AnchorPane.topAnchor="60.0">
+         <children>
+            <Label layoutX="24.0" layoutY="79.0" text="模板名称：" />
+            <TextField fx:id="tempName" layoutX="99.0" layoutY="75.0" />
+            <Button layoutX="254.0" layoutY="75.0" mnemonicParsing="false" onAction="#addTempChil" text="添加模板数据" />
+            <Button fx:id="saveBtn" layoutX="370.0" layoutY="75.0" mnemonicParsing="false" onAction="#addTemp" text="确认" />
+            <Button layoutX="449.0" layoutY="68.0" mnemonicParsing="false" onAction="#back" prefHeight="20.0" prefWidth="50.0" text="返回" />
+         </children>
+      </HBox>
+      <TextField fx:id="tempId" layoutX="438.0" layoutY="18.0" visible="false" />
+   </children>
+</AnchorPane>

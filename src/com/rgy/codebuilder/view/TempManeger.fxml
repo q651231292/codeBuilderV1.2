@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.rgy.codebuilder.controller.TempManegerCtrl">
+   <children>
+      <Label layoutX="136.0" layoutY="57.0" text="模板管理" AnchorPane.leftAnchor="8.0" AnchorPane.topAnchor="8.0">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <HBox layoutX="8.0" layoutY="50.0" spacing="8.0" AnchorPane.leftAnchor="8.0" AnchorPane.topAnchor="60.0">
+         <children>
+            <Button layoutX="41.0" layoutY="106.0" mnemonicParsing="false" onAction="#createTempTo" text="创建" />
+            <Button layoutX="51.0" layoutY="116.0" mnemonicParsing="false" onAction="#deleteTemp" text="删除" />
+            <Button layoutX="61.0" layoutY="126.0" mnemonicParsing="false" onAction="#updateTempTo" text="修改" />
+            <Button layoutX="106.0" layoutY="10.0" mnemonicParsing="false" onAction="#back" text="返回" />
+         </children>
+      </HBox>
+      <TableView fx:id="tempList" layoutX="70.0" layoutY="115.0" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="8.0" AnchorPane.leftAnchor="8.0" AnchorPane.rightAnchor="8.0" AnchorPane.topAnchor="90.0">
+        <columns>
+          <TableColumn fx:id="tempName" prefWidth="75.0" text="模板名" />
+        </columns>
+         <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy>
+      </TableView>
+   </children>
+</AnchorPane>
