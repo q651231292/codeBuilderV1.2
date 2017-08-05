@@ -6,6 +6,7 @@
         <option name="appClass" value="com.rgy.codebuilder.App" />
         <option name="description" value="" />
         <option name="htmlPlaceholderId" value="" />
+        <option name="nativeBundle" value="exe" />
         <option name="title" value="codebuilder" />
         <option name="vendor" value="codebuilder" />
         <option name="version" value="1.2" />

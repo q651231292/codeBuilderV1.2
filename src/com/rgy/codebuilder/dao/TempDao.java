@@ -1,11 +1,9 @@
 package com.rgy.codebuilder.dao;
 
-import com.rgy.codebuilder.App;
 import com.rgy.codebuilder.util.Jdbc;
 
 import java.util.List;
 import java.util.Map;
-import java.util.UUID;
 
 /**
  * Created by Administrator on 2017/8/4.

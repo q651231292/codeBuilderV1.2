@@ -33,16 +33,15 @@ public class TempManegerCtrl {
     private void initialize() {
         tempService = new TempService();
         ObservableList<Temp> temps = tempService.queryTemps();
-        System.out.println(temps);
         tempName.setCellValueFactory(cellData -> cellData.getValue().tempNameProperty());
         tempList.setItems(temps);
 
     }
-    public void createTempTo(ActionEvent actionEvent) throws IOException {
+    public void createTempTo(ActionEvent actionEvent) {
         app.showTempAdd(app);
     }
 
-    public void deleteTemp(ActionEvent actionEvent) throws IOException {
+    public void deleteTemp(ActionEvent actionEvent) {
 
         Temp t = tempList.getSelectionModel().getSelectedItem();
         String id = t.getTempId();
@@ -56,7 +55,7 @@ public class TempManegerCtrl {
         }
     }
 
-    public void updateTempTo(ActionEvent actionEvent) throws IOException {
+    public void updateTempTo(ActionEvent actionEvent) {
         Temp t = tempList.getSelectionModel().getSelectedItem();
         String tempId = t.getTempId();
         app.showTempAdd(app,tempId);

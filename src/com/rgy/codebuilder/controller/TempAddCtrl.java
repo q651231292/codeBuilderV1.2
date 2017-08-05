@@ -1,22 +1,19 @@
 package com.rgy.codebuilder.controller;
 
 import com.rgy.codebuilder.App;
-import com.rgy.codebuilder.model.Temp;
 import com.rgy.codebuilder.service.TempService;
 import com.rgy.codebuilder.util.AlertTool;
-import javafx.collections.FXCollections;
+import com.rgy.codebuilder.util.LogTool;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
-import javafx.geometry.HPos;
-import javafx.geometry.Insets;
 import javafx.scene.Node;
-import javafx.scene.Scene;
-import javafx.scene.control.*;
-import javafx.scene.input.MouseEvent;
-import javafx.scene.layout.*;
-import javafx.scene.paint.Color;
-import javafx.scene.shape.Rectangle;
+import javafx.scene.control.Button;
+import javafx.scene.control.ScrollPane;
+import javafx.scene.control.TextArea;
+import javafx.scene.control.TextField;
+import javafx.scene.layout.HBox;
+import javafx.scene.layout.VBox;
 
 import java.io.IOException;
 import java.util.Arrays;
@@ -83,11 +80,7 @@ public class TempAddCtrl {
         boolean isSuccess =  tempService.updateTempAndDatas(tempId,tempName,tempDataIds,labels,values);
         if(isSuccess){
             AlertTool.show("成功");
-            try {
-                app.showTempManeger(app);
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
+            app.showTempManeger(app);
         }else{
             AlertTool.show("失败");
         }
@@ -114,7 +107,7 @@ public class TempAddCtrl {
         vbox.getChildren().addAll(hbox);
     }
 
-    public void addTemp(ActionEvent actionEvent) throws IOException {
+    public void addTemp(ActionEvent actionEvent)  {
         ObservableList<Node> children = vbox.getChildren();
         tempService = new TempService();
         Map<String, List<String>> labelAndValue = tempService.getLabelAndValue(children);

@@ -10,17 +10,15 @@ import com.rgy.codebuilder.util.Jdbc;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
-import javafx.geometry.NodeOrientation;
 import javafx.scene.Node;
-import javafx.scene.control.*;
-import javafx.scene.input.InputMethodEvent;
+import javafx.scene.control.ChoiceBox;
+import javafx.scene.control.Label;
+import javafx.scene.control.SingleSelectionModel;
+import javafx.scene.control.TextField;
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
 import javafx.stage.DirectoryChooser;
-import javafx.stage.DirectoryChooserBuilder;
-import javafx.stage.FileChooser;
 import javafx.stage.Stage;
-import jdk.nashorn.internal.objects.Global;
 
 import java.io.File;
 import java.io.IOException;
@@ -148,7 +146,7 @@ public class CreateCodeCtrl {
             fileNames.add(tempName);
         }
         //处理文件名,Emp(参数名)Action(文件名action->Action)
-        System.out.println(fileDatas);
+        //System.out.println(fileDatas);
 
         String outPath = pathVal.getText();
         System.out.println();

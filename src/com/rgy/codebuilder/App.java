@@ -4,6 +4,7 @@ import com.rgy.codebuilder.controller.CreateCodeCtrl;
 import com.rgy.codebuilder.controller.TempAddCtrl;
 import com.rgy.codebuilder.controller.TempManegerCtrl;
 import com.rgy.codebuilder.service.AppService;
+import com.rgy.codebuilder.util.LogTool;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
@@ -11,6 +12,7 @@ import javafx.scene.image.Image;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.BorderPane;
 import javafx.stage.Stage;
+
 import java.io.IOException;
 
 public class App extends Application {
@@ -19,7 +21,7 @@ public class App extends Application {
     private AppService appService;
 
     @Override
-    public void start(Stage primaryStage) throws Exception{
+    public void start(Stage primaryStage){
         stage = primaryStage;
         showCreateCode();
         appService = new AppService();
@@ -33,30 +35,45 @@ public class App extends Application {
         return stage;
     }
 
-    public void showCreateCode() throws IOException {
+    public void showCreateCode()  {
         FXMLLoader loader = new FXMLLoader();
         loader.setLocation(App.class.getResource("view/CreateCode.fxml"));
-        BorderPane page = loader.load();
+        BorderPane page = null;
+        try {
+            page = loader.load();
+        } catch (IOException e) {
+            LogTool.writeException(e);
+        }
         Scene scene = new Scene(page);
         stage.setScene(scene);
         CreateCodeCtrl controller = loader.getController();
         controller.setApp(this);
     }
 
-    public void showTempManeger(App app) throws IOException {
+    public void showTempManeger(App app) {
         FXMLLoader loader = new FXMLLoader();
         loader.setLocation(App.class.getResource("view/TempManeger.fxml"));
-        AnchorPane page = loader.load();
+        AnchorPane page = null;
+        try {
+            page = loader.load();
+        } catch (Exception e) {
+            LogTool.writeException(e);
+        }
         Scene scene = new Scene(page);
         stage.setScene(scene);
         TempManegerCtrl controller = loader.getController();
         controller.setApp(this);
     }
 
-    public void showTempAdd(App app,String...ids) throws IOException {
+    public void showTempAdd(App app,String...ids) {
         FXMLLoader loader = new FXMLLoader();
         loader.setLocation(App.class.getResource("view/TempAdd.fxml"));
-        AnchorPane page = loader.load();
+        AnchorPane page = null;
+        try {
+            page = loader.load();
+        } catch (IOException e) {
+            LogTool.writeException(e);
+        }
         Scene scene = new Scene(page);
         stage.setScene(scene);
         TempAddCtrl controller = loader.getController();
