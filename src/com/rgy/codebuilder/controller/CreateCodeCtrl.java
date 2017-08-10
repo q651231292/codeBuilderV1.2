@@ -23,6 +23,8 @@ import javafx.stage.Stage;
 import java.io.File;
 import java.io.IOException;
 import java.util.*;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 /**
  * Created by Administrator on 2017/8/4.
@@ -148,15 +150,13 @@ public class CreateCodeCtrl {
         //处理文件名,Emp(参数名)Action(文件名action->Action)
         //System.out.println(fileDatas);
 
-        String outPath = pathVal.getText();
-        System.out.println();
-
-
 
         boolean isSuccess = true;
         for (int i = 0; i < fileNames.size(); i++) {
+            String outPath = pathVal.getText();
             String fileName = fileNames.get(i);
             String fileData = fileDatas.get(i);
+            outPath = getFileOutPaht(fileData,outPath);
             isSuccess = FileTool.write(outPath, fileName, fileData);
         }
         if(isSuccess){
@@ -166,6 +166,26 @@ public class CreateCodeCtrl {
         }
 
     }
+
+    private String getFileOutPaht(String fileData, String outPath) {
+        String regex = "package(.*?);.*?\n.*?";
+        Pattern p = Pattern.compile(regex);
+        Matcher m = p.matcher(fileData); // 获取 matcher 对象
+        while(m.find()) {
+            String packageName = m.group(1);
+            outPath = outPath+toFileSysPath(packageName);//把.转换成/
+
+        }
+        return outPath;
+    }
+
+    private String toFileSysPath(String packageName) {
+        packageName = packageName.trim();
+        packageName = packageName.replace(".",File.separator);
+        packageName = File.separator+packageName;
+        return packageName;
+    }
+
     private String getFileData(String tempValue, List<String> labels, List<String> values) {
         for (int i = 0; i < labels.size(); i++) {
             String label = labels.get(i);
