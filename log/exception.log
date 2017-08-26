@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2017-08-26T13:48:25</date>
+  <millis>1503726505956</millis>
+  <sequence>0</sequence>
+  <logger>codebuilder</logger>
+  <level>INFO</level>
+  <class>com.rgy.codebuilder.util.LogTool</class>
+  <method>writeException</method>
+  <thread>14</thread>
+  <message>
+/D:/Workspaces/idea/codeBuilder1.2/out/production/codeBuilder/com/rgy/codebuilder/view/TempManeger.fxml:28
+</message>
+</record>
+</log>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2017-08-26T13:48:39</date>
+  <millis>1503726519692</millis>
+  <sequence>0</sequence>
+  <logger>codebuilder</logger>
+  <level>INFO</level>
+  <class>com.rgy.codebuilder.util.LogTool</class>
+  <method>writeException</method>
+  <thread>14</thread>
+  <message>
+/D:/Workspaces/idea/codeBuilder1.2/out/production/codeBuilder/com/rgy/codebuilder/view/TempManeger.fxml:28
+</message>
+</record>
+</log>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2017-08-26T15:49:09</date>
+  <millis>1503733749050</millis>
+  <sequence>0</sequence>
+  <logger>codebuilder</logger>
+  <level>INFO</level>
+  <class>com.rgy.codebuilder.util.LogTool</class>
+  <method>writeException</method>
+  <thread>14</thread>
+  <message>Error resolving onMouseClicked='#updataTemp', either the event handler is not in the Namespace or there is an error in the script.
+/D:/Workspaces/idea/codeBuilder1.2/out/production/codeBuilder/com/rgy/codebuilder/view/TempManeger.fxml:33
+</message>
+</record>
+</log>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2017-08-26T15:49:59</date>
+  <millis>1503733799060</millis>
+  <sequence>0</sequence>
+  <logger>codebuilder</logger>
+  <level>INFO</level>
+  <class>com.rgy.codebuilder.util.LogTool</class>
+  <method>writeException</method>
+  <thread>14</thread>
+  <message>Error resolving onMouseClicked='#updataTemp', either the event handler is not in the Namespace or there is an error in the script.
+/D:/Workspaces/idea/codeBuilder1.2/out/production/codeBuilder/com/rgy/codebuilder/view/TempManeger.fxml:33
+</message>
+</record>
+</log>
