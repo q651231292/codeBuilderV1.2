@@ -56,4 +56,10 @@ public class TempDao {
         return isSuccess;
 
     }
+
+    public boolean deleteTempData(String id) {
+        jdbc = new Jdbc();
+        boolean isSuccess = jdbc.del("delete from temp_data where temp_data_id='"+id+"'");
+        return isSuccess;
+    }
 }

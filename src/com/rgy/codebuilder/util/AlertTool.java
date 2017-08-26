@@ -13,4 +13,11 @@ public class AlertTool {
         alert.setHeaderText(text);
         alert.showAndWait();
     }
+    public static void show(String text,String title) {
+        Alert alert = new Alert(AlertType.INFORMATION);
+        alert.setTitle(title);
+        alert.setHeaderText(text);
+        alert.showAndWait();
+    }
+
 }

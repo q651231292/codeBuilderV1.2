@@ -14,7 +14,8 @@
           </Menu>
           <Menu mnemonicParsing="false" text="帮助">
             <items>
-              <MenuItem mnemonicParsing="false" text="关于" />
+                <MenuItem mnemonicParsing="false" onAction="#help" text="如何使用" />
+                <MenuItem mnemonicParsing="false" onAction="#About" text="关于" />
             </items>
           </Menu>
         </menus>
@@ -37,7 +38,7 @@
                   <Font size="13.0" />
                </font>
             </Label>
-            <ChoiceBox fx:id="tempList" layoutX="55.0" layoutY="13.0" prefWidth="150.0" AnchorPane.leftAnchor="50.0" AnchorPane.topAnchor="8.0" />
+            <ComboBox fx:id="tempList" layoutX="55.0" layoutY="13.0" prefWidth="150.0" AnchorPane.leftAnchor="50.0" AnchorPane.topAnchor="8.0" />
          </children>
       </AnchorPane>
    </center>

@@ -35,13 +35,21 @@ public class TempManegerCtrl {
         ObservableList<Temp> temps = tempService.queryTemps();
         tempName.setCellValueFactory(cellData -> cellData.getValue().tempNameProperty());
         tempList.setItems(temps);
+        tempList.setOnMouseClicked(event -> {
+            int clickCount = event.getClickCount();
+            if(clickCount==2){
+                updateTempTo();
+            }
+        });
+
+
 
     }
-    public void createTempTo(ActionEvent actionEvent) {
+    public void createTempTo() {
         app.showTempAdd(app);
     }
 
-    public void deleteTemp(ActionEvent actionEvent) {
+    public void deleteTemp() {
 
         Temp t = tempList.getSelectionModel().getSelectedItem();
         String id = t.getTempId();
@@ -55,13 +63,13 @@ public class TempManegerCtrl {
         }
     }
 
-    public void updateTempTo(ActionEvent actionEvent) {
+    public void updateTempTo() {
         Temp t = tempList.getSelectionModel().getSelectedItem();
         String tempId = t.getTempId();
         app.showTempAdd(app,tempId);
     }
 
-    public void back(ActionEvent actionEvent) throws IOException {
+    public void back() throws IOException {
         app.showCreateCode();
     }
 }

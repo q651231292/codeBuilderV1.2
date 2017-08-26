@@ -2,6 +2,7 @@ package com.rgy.codebuilder.service;
 
 import com.rgy.codebuilder.dao.TempDao;
 import com.rgy.codebuilder.model.Temp;
+import com.rgy.codebuilder.util.ValiTool;
 import javafx.beans.property.SimpleStringProperty;
 import javafx.beans.property.StringProperty;
 import javafx.collections.FXCollections;
@@ -42,15 +43,18 @@ public class TempService {
         for (int i = 0; i < children.size(); i++) {
             HBox hbox = (HBox)children.get(i);
             for (int j = 0; j < hbox.getChildren().size(); j++) {
+                //模板数据ID
                 if(j==0){
                     TextField label = (TextField)hbox.getChildren().get(j);
                     tempDataIds.add(label.getText());
 
                 }
+                //模板名称,作用是生成文件作为后缀
                 if(j==1){
                     TextField label = (TextField)hbox.getChildren().get(j);
                     labels.add(label.getText());
                 }
+                //模板的值
                 if(j==2){
                     TextArea value = (TextArea)hbox.getChildren().get(j);
                     values.add(value.getText());
@@ -97,7 +101,13 @@ public class TempService {
                 String tempDataId = tempDataIds.get(i);
                 String label = labels.get(i);
                 String value = values.get(i);
-                isSuccess = tempDao.updateTempData(label,value,tempDataId);
+                if(ValiTool.strIsNull(tempDataId)){
+                    tempDataId =UUID.randomUUID().toString();
+                    isSuccess = tempDao.saveTempData(tempDataId,tempId,label,value);
+                }else{
+                    isSuccess = tempDao.updateTempData(label,value,tempDataId);
+                }
+
             }
 
         }
@@ -125,5 +135,10 @@ public class TempService {
             set.add(mark);
         }
         return set;
+    }
+
+    public boolean deleteTempData(String id) {
+        tempDao = new TempDao();
+        return tempDao.deleteTempData(id);
     }
 }
