@@ -66,3 +66,20 @@
 </message>
 </record>
 </log>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2017-08-26T19:26:55</date>
+  <millis>1503746815083</millis>
+  <sequence>0</sequence>
+  <logger>codebuilder</logger>
+  <level>INFO</level>
+  <class>com.rgy.codebuilder.util.LogTool</class>
+  <method>writeException</method>
+  <thread>14</thread>
+  <message>
+/D:/Workspaces/idea/codeBuilder1.2/out/production/codeBuilder/com/rgy/codebuilder/view/CreateCode.fxml
+</message>
+</record>
+</log>
