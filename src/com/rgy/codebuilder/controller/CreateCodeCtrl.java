@@ -92,13 +92,15 @@ public class CreateCodeCtrl {
         List<Map<String, String>> tempDatas = tempService.queryTempDatas(tempId);
         Set<String> marks  = tempService.getValueMarks(tempDatas);//提取模板标签
 
+        int labelWidth = 150;
+        int textWidth = 500;
         //创建公共的字段,公共字段是磁盘路径和文件前缀
         HBox hbox = new HBox();
         Label label = new Label();
         label.setText("磁盘路径");
-        label.setPrefWidth(150);
+        label.setPrefWidth(labelWidth);
         pathVal = new TextField();
-        pathVal.setPrefWidth(300);
+        pathVal.setPrefWidth(textWidth);
         pathVal.setOnMouseClicked(e->showFileDirSelect());
         hbox.getChildren().addAll(label, pathVal);
         vbox.getChildren().add(hbox);
@@ -106,18 +108,19 @@ public class CreateCodeCtrl {
         hbox = new HBox();
         label = new Label();
         label.setText("文件前缀");
-        label.setPrefWidth(150);
+        label.setPrefWidth(labelWidth);
         filePrefixVal = new TextField();
-        filePrefixVal.setPrefWidth(300);
+        filePrefixVal.setPrefWidth(textWidth);
         hbox.getChildren().addAll(label, filePrefixVal);
         vbox.getChildren().add(hbox);
 
         //分割线,用于分割公共字段和自定义字段
         hbox = new HBox();
         Separator hr = new Separator();
-        hr.setPrefWidth(450);
+        //hr.setPrefWidth(450);
         hbox.getChildren().addAll(hr);
-        vbox.getChildren().add(hbox);
+        vbox.getChildren().add(hr);
+
 
         //迭代自定义字段,把自定义字段添加到页面上
         Iterator<String> iterator = marks.iterator();
@@ -126,9 +129,9 @@ public class CreateCodeCtrl {
             hbox = new HBox();
             label = new Label();
             label.setText(mark);
-            label.setPrefWidth(150);
+            label.setPrefWidth(labelWidth);
             TextField txt = new TextField();
-            txt.setPrefWidth(300);
+            txt.setPrefWidth(textWidth);
             hbox.getChildren().addAll(label, txt);
             vbox.getChildren().add(hbox);
         }

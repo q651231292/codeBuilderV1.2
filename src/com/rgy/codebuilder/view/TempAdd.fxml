@@ -10,9 +10,9 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.rgy.codebuilder.controller.TempAddCtrl">
+<AnchorPane prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.rgy.codebuilder.controller.TempAddCtrl">
    <children>
-      <ScrollPane fx:id="tempData" layoutX="14.0" layoutY="93.0" prefHeight="139.0" prefWidth="301.0" AnchorPane.bottomAnchor="8.0" AnchorPane.leftAnchor="8.0" AnchorPane.rightAnchor="8.0" AnchorPane.topAnchor="95.0">
+      <ScrollPane fx:id="tempData" fitToWidth="true" layoutX="14.0" layoutY="93.0" prefHeight="139.0" prefWidth="301.0" AnchorPane.bottomAnchor="8.0" AnchorPane.leftAnchor="8.0" AnchorPane.rightAnchor="8.0" AnchorPane.topAnchor="95.0">
          <content>
             <VBox fx:id="vbox" spacing="8.0">
                <opaqueInsets>
