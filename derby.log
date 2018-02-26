@@ -1,13 +1,13 @@
 ----------------------------------------------------------------
-Fri Sep 15 23:09:08 CST 2017:
-Booting Derby version The Apache Software Foundation - Apache Derby - 10.13.1.1 - (1765088): instance a816c00e-015e-8616-17df-000005fad960 
-on database directory D:\Workspaces\idea\codeBuilder1.2\db with class loader sun.misc.Launcher$AppClassLoader@18b4aac2 
-Loaded from file:/D:/Workspaces/efxlipse/codeBuilder/lib/derby-10.13.1.1.jar
+Mon Feb 26 14:01:29 CST 2018:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.13.1.1 - (1765088): instance a816c00e-0161-d0b3-a37d-000006bbfec8 
+on database directory C:\renguanyu\MyProject\codeBuilderV1.2\db with class loader sun.misc.Launcher$AppClassLoader@18b4aac2 
+Loaded from file:/C:/renguanyu/MyProject/codeBuilderV1.2/lib/derby-10.13.1.1.jar
 java.vendor=Oracle Corporation
 java.runtime.version=1.8.0_131-b11
-user.dir=D:\Workspaces\idea\codeBuilder1.2
-os.name=Windows 7
+user.dir=C:\renguanyu\MyProject\codeBuilderV1.2
+os.name=Windows 10
 os.arch=amd64
-os.version=6.1
+os.version=10.0
 derby.system.home=null
 Database Class Loader started - derby.database.classpath=''

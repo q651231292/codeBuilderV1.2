@@ -83,3 +83,139 @@
 </message>
 </record>
 </log>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2018-02-26T13:51:57</date>
+  <millis>1519624317224</millis>
+  <sequence>0</sequence>
+  <logger>codebuilder</logger>
+  <level>INFO</level>
+  <class>com.rgy.codebuilder.util.LogTool</class>
+  <method>writeException</method>
+  <thread>14</thread>
+  <message>
+/C:/renguanyu/MyProject/codeBuilderV1.2/out/production/codeBuilder/com/rgy/codebuilder/view/CreateCode.fxml
+</message>
+</record>
+</log>
+<?xml version="1.0" encoding="GBK" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2018-02-26T13:52:30</date>
+  <millis>1519624350017</millis>
+  <sequence>0</sequence>
+  <logger>codebuilder</logger>
+  <level>INFO</level>
+  <class>com.rgy.codebuilder.util.LogTool</class>
+  <method>writeException</method>
+  <thread>13</thread>
+  <message>
+file:/C:/renguanyu/MyProject/codeBuilderV1.2/out/artifacts/codeBuilder/codeBuilder.jar!/com/rgy/codebuilder/view/CreateCode.fxml
+</message>
+</record>
+</log>
+<?xml version="1.0" encoding="GBK" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2018-02-26T13:54:28</date>
+  <millis>1519624468745</millis>
+  <sequence>0</sequence>
+  <logger>codebuilder</logger>
+  <level>INFO</level>
+  <class>com.rgy.codebuilder.util.LogTool</class>
+  <method>writeException</method>
+  <thread>13</thread>
+  <message>
+file:/C:/renguanyu/MyProject/codeBuilderV1.2/out/artifacts/codeBuilder/codeBuilder.jar!/com/rgy/codebuilder/view/CreateCode.fxml
+</message>
+</record>
+</log>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2018-02-26T13:55:22</date>
+  <millis>1519624522141</millis>
+  <sequence>0</sequence>
+  <logger>codebuilder</logger>
+  <level>INFO</level>
+  <class>com.rgy.codebuilder.util.LogTool</class>
+  <method>writeException</method>
+  <thread>14</thread>
+  <message>
+/C:/renguanyu/MyProject/codeBuilderV1.2/out/production/codeBuilder/com/rgy/codebuilder/view/CreateCode.fxml
+</message>
+</record>
+</log>
+<?xml version="1.0" encoding="GBK" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2018-02-26T13:55:46</date>
+  <millis>1519624546614</millis>
+  <sequence>0</sequence>
+  <logger>codebuilder</logger>
+  <level>INFO</level>
+  <class>com.rgy.codebuilder.util.LogTool</class>
+  <method>writeException</method>
+  <thread>13</thread>
+  <message>
+file:/C:/renguanyu/MyProject/codeBuilderV1.2/out/artifacts/codeBuilder/codeBuilder.jar!/com/rgy/codebuilder/view/CreateCode.fxml
+</message>
+</record>
+</log>
+<?xml version="1.0" encoding="GBK" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2018-02-26T13:58:22</date>
+  <millis>1519624702236</millis>
+  <sequence>0</sequence>
+  <logger>codebuilder</logger>
+  <level>INFO</level>
+  <class>com.rgy.codebuilder.util.LogTool</class>
+  <method>writeException</method>
+  <thread>13</thread>
+  <message>
+file:/C:/renguanyu/MyProject/codeBuilderV1.2/out/artifacts/codeBuilder/codeBuilder.jar!/com/rgy/codebuilder/view/CreateCode.fxml
+</message>
+</record>
+</log>
+<?xml version="1.0" encoding="GBK" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2018-02-26T13:58:38</date>
+  <millis>1519624718611</millis>
+  <sequence>0</sequence>
+  <logger>codebuilder</logger>
+  <level>INFO</level>
+  <class>com.rgy.codebuilder.util.LogTool</class>
+  <method>writeException</method>
+  <thread>13</thread>
+  <message>
+file:/C:/renguanyu/MyProject/codeBuilderV1.2/out/artifacts/codeBuilder/codeBuilder.jar!/com/rgy/codebuilder/view/CreateCode.fxml
+</message>
+</record>
+</log>
+<?xml version="1.0" encoding="GBK" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2018-02-26T13:59:30</date>
+  <millis>1519624770050</millis>
+  <sequence>0</sequence>
+  <logger>codebuilder</logger>
+  <level>INFO</level>
+  <class>com.rgy.codebuilder.util.LogTool</class>
+  <method>writeException</method>
+  <thread>13</thread>
+  <message>
+file:/C:/renguanyu/MyProject/codeBuilderV1.2/out/artifacts/codeBuilder/codeBuilder.jar!/com/rgy/codebuilder/view/CreateCode.fxml
+</message>
+</record>
+</log>
